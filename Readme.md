@@ -143,3 +143,6 @@ conhost!Microsoft::Console::Interactivity::Win32::Window::ConsoleWindowProc+0x77
 
 我对原作者的代码做了一点小修改,主要是加入了pre_test(),这是为了方便在windbg中进行调试,顺便也对一些函数参数做了修改,现在代码支持指定conhost的窗口名来寻找目标conhost
 
+
+Shellcode我依然使用了原作者提供的calc64,将其作为payload输入,可以让目标conhost启动计算器
+
